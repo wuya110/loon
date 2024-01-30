@@ -1,0 +1,10 @@
+#!name=网易云vip听歌
+#!desc=免费听vip歌曲
+#!icon=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/NetEase_Music.png
+
+[Script]
+# > 网易云解锁VIP
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path=https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js, timeout=60, tag=Wyy
+
+[MITM]
+hostname = *.music.163.com
